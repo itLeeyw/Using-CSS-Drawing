@@ -1,0 +1,47 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+*::after,
+*::before
+{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    border: 1px solid greenyellow;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    position: relative;
+    height: 165px;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.eye{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background: black;
+
+}
+.eye.left{
+    left:50%;
+    margin-left: 90px;
+}
+.eye.right{
+    right:50%;
+    margin-right: 90px;
+}
+
+.nose{
+    position: absolute;
+    left: 50%;
+    top: 28px;
+    margin-left: -15px;
+    border-radius: 50%;
+    border: 11px solid ;
+    border-color: black transparent transparent transparent;
+    border-width: 12px 15px;
+}
