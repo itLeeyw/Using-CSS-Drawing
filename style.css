@@ -9,6 +9,7 @@ body{
 }
 .code-wrapper{
     position: fixed;
+    z-index: -1;
     width: 23rem;
     height: 16rem;
     top: 1rem;
