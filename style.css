@@ -9,10 +9,10 @@ body{
 }
 .code-wrapper{
     position: fixed;
-    width: 500px;
-    height: 300px;
-    top: 50px;
-    left: 50px;
+    width: 23rem;
+    height: 16rem;
+    top: 1rem;
+    left: 1rem;
     background: rgba(0,0 ,0 , 0.2)
 }
 #code{
