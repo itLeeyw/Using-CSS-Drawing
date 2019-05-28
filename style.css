@@ -9,12 +9,12 @@ body{
 }
 .code-wrapper{
     position: fixed;
-
     width: 23rem;
     height: 16rem;
     top: 1rem;
     left: 1rem;
-    background: rgba(0,0 ,0 , 0.2)
+    background: rgba(0,0 ,0 , 0.2);
+    z-index: 1;
 }
 #code{
     overflow: auto;
@@ -22,16 +22,16 @@ body{
     padding: 10px;
 }
 .preview-wrapper{
-    z-index: -1;
+
     height: 100vh;
 }
 
 .actions{
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 1%;
+    bottom: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .actions > button{
     height: 50px;
