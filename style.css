@@ -9,7 +9,7 @@ body{
 }
 .code-wrapper{
     position: fixed;
-    z-index: -1;
+
     width: 23rem;
     height: 16rem;
     top: 1rem;
@@ -22,6 +22,7 @@ body{
     padding: 10px;
 }
 .preview-wrapper{
+    z-index: -1;
     height: 100vh;
 }
 
