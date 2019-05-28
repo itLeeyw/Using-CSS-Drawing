@@ -10,6 +10,7 @@ body{
     border: 1px solid greenyellow;
     justify-content: center;
     align-items: center;
+    background: #fee433;
 }
 .wrapper{
     position: relative;
@@ -23,7 +24,20 @@ body{
     width: 49px;
     height: 49px;
     border-radius: 50%;
-    background: black;
+    background: #2e2e2e;
+    border: 2px solid #000;
+
+}
+.eye::before{
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    left: 3px;
 
 }
 .eye.left{
@@ -44,4 +58,77 @@ body{
     border: 11px solid ;
     border-color: black transparent transparent transparent;
     border-width: 12px 15px;
+}
+
+.face{
+    width: 68px;
+    height: 68px;
+    background: #fc0d1c;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+}
+.face.left{
+    right:50%;
+    top: 85px;
+    margin-right: 116px;
+}
+.face.right{
+    left:50%;
+    top: 85px;
+    margin-left: 116px;
+}
+
+.upLip{
+    position: absolute;
+    height: 25px;
+    width: 83px;
+    border: 3px solid black;
+    top: 48px;
+    background: #fee433;
+}
+.upLip.left{
+    border-bottom-left-radius: 50% 50%;
+    border-top: transparent;
+    border-right: transparent;
+    transform: rotate(-20deg);
+    right: 50%;
+}
+.upLip.right{
+    border-bottom-right-radius: 50% 10px;
+    border-top: transparent;
+    border-left: transparent;
+    transform: rotate(20deg);
+    left: 50%;
+}
+.lowerLip-wrapper{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    margin-left: -150px;
+    z-index: -1;
+    height: 110px;
+    width: 300px;
+    overflow: hidden;
+}
+.lowerLip{ 
+    position: absolute;
+    width: 300px;
+    height: 3500px;
+    background: #990513;
+    border-radius: 200px/2000px;
+    border:2px solid black;
+    bottom: 0;
+    overflow: hidden;
+}
+.lowerLip::after{
+    content:'';
+    position: absolute;
+    bottom: -20px;
+    width: 100px;
+    height: 100px;
+    background: #fc4a62;
+    left: 50%;
+    margin-left: -50px;
+    border-radius: 50%;
 }
